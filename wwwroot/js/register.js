@@ -27,13 +27,21 @@ async function regfetch(event){
             window.location.replace("/login.html");
         }
         else {
-            const errReg = await response.json()
-            switch(errReg.code){
-                case "DuplicateUserName":
-                    document.getElementById("result").innerText = "Такой пользователь уже существует"; //its maybe work.. I dk lol
-                    break;
+            const errReg = await response.json();
+            const result = document.getElementById("result");
+            if (errReg.errors?.PasswordRequiresNonAlphanumeric) {
+                result.innerText = "Пароль должен содержать хотя бы один специальный символ: ! @ # $ %";
+            } else {
+                result.innerText = "Ошибка регистрации.";
+                console.log(errReg);
             }
-        }
+
+
+
+            console.log("Status:", response.status);
+            console.log("Identity error:", errReg);
+            }
+        
     }
     else {
         document.getElementById("result").innerText = "Ошибка! Пароли не одинаковые!";

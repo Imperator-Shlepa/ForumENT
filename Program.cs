@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
@@ -12,11 +14,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => {
 });
 
 builder.Services.AddIdentityApiEndpoints<ApplicationUser>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapGroup("/api/account").MapIdentityApi<ApplicationUser>();
 

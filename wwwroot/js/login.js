@@ -1,7 +1,7 @@
 const login = document.getElementById("login-form");
 
 
-register.addEventListener("submit", loginfetch);
+login.addEventListener("submit", loginfetch);
 async function loginfetch(event){
     event.preventDefault();
     const LoginInput = document.getElementById("login").value.trim();
@@ -12,9 +12,9 @@ async function loginfetch(event){
         password: PasswordInput
     };
 
-    const response = await fetch ("api/account/login", {
+    const response = await fetch ("/api/account/login", {
         method: "POST",
-        headers: {"Contetn-Type": "application/json"},
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify(data)
     });
     if (response.ok){

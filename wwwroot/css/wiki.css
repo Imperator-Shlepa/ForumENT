@@ -1,25 +1,34 @@
 body {
+    margin: 0;
+
     font-family: "Segoe UI", Arial, sans-serif;
     color: #ffffff;
     line-height: 1.6;
 
     background-image: url('/images/backgrounds/MrBeast.png');
-    background-size: cover;       /* картинка растягивается на весь экран, сохраняя пропорции */
-    background-position: center;  /* картинка центрируется */
-    background-attachment: fixed; /* не скроллится вместе со страницей, остаётся на месте */
-    background-repeat: no-repeat; /* не повторяется плиткой */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
+/* HEADER */
 .site-header {
+    position: relative;
+    z-index: 10;
+
+    height: 96px;
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 32px;
+
+    padding: 0 32px;
 
     background-color: rgba(51, 51, 51, 0.25);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(12px);
-    margin: -24px -32px 35px -32px; 
 }
 
 .main-nav {
@@ -30,4 +39,49 @@ body {
 .main-nav a {
     color: #fff;
     font-size: 15px;
+}
+
+
+
+.page-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wiki-sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 96px;
+    bottom: 0;
+
+    width: 180px;
+    box-sizing: border-box;
+
+    padding: 16px;
+
+    background-color: rgba(51, 51, 51, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+
+    color: #fff;
+
+    border-radius: 0;
+
+    overflow-y: auto;
+}
+
+
+/* CONTENT */
+.wiki-content {
+    margin-left: 220px;
+
+    min-width: 0;
+
+    padding: 24px 32px;
+
+    color: #fff;
 }

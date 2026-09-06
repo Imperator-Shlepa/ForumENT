@@ -17,13 +17,16 @@
         </nav>
     </header>
 
-    <aside class="wiki-sidebar">
-        <!-- сюда позже вставим меню разделов вики -->
-    </aside>
+    <div class="page-wrapper">
+        <aside class="wiki-sidebar">
+            <h1>TEST</h1>
+            <h2>YA</h2>
+        </aside>
 
-    <main class="wiki-content">
-        @RenderBody()
-    </main>
+        <main class="wiki-content">
+            @RenderBody()
+        </main>
+    </div>
 
     <footer class="site-footer">
         <p>&copy; @DateTime.Now.Year ENTERPRISE</p>

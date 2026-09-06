@@ -1,4 +1,3 @@
-<div class="site-header">
 
 # Добро пожаловать на форум сервера ENTERPRISE
 
@@ -6,9 +5,6 @@
 
 <input type="text" name="userGET" placeholder="Поиск" size="18" />
 
-[Login](/login.html) · [Registration](/register.html)
-
-</div>
 
 ---
 

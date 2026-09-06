@@ -1,0 +1,33 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+
+    background-image: url('/images/backgrounds/MrBeast.png');
+    background-size: cover;       /* картинка растягивается на весь экран, сохраняя пропорции */
+    background-position: center;  /* картинка центрируется */
+    background-attachment: fixed; /* не скроллится вместе со страницей, остаётся на месте */
+    background-repeat: no-repeat; /* не повторяется плиткой */
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 32px;
+
+    background-color: rgba(51, 51, 51, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    margin: -24px -32px 35px -32px; 
+}
+
+.main-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 15px;
+}

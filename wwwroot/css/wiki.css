@@ -13,23 +13,74 @@ body {
 }
 
 .logo {
+    display: block;
+
     width: 160px;
     height: 80px;
 
-    margin: 0;
+    margin: 0 0 0 30px;
 
     background-image: url('/images/icons/ENTLogo.png');
     background-size: contain;
-    background-position: left;
+    background-position: left center;
     background-repeat: no-repeat;
 }
 
+.newsButton a {
+    background-color: #3748935e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    Font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.forumsButton a {
+    background-color: #3748935e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    Font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.wikiButton a {
+    background-color: #3748935e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    Font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.contactsButton a {
+    background-color: #3748935e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    Font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+
+
 
 .site-header {
-    position: relative;
+    position: fixed;
     z-index: 10;
 
     height: 96px;
+    width: 1529px;
+    left: 180px;
     box-sizing: border-box;
 
     display: flex;
@@ -67,7 +118,7 @@ body {
     position: fixed;
 
     left: 0;
-    top: 96px;
+    top: 0;
     bottom: 0;
 
     width: 180px;

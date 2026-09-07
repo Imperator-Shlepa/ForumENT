@@ -3,7 +3,7 @@
 
 ### IP сервера: `station-enterprise.space`
 
-<input type="text" name="userGET" placeholder="Поиск" size="18" />
+
 
 
 ---

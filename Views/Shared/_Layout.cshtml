@@ -8,19 +8,29 @@
 <body>
 
     <header class="site-header">
-        <div class="logo"></div>
+        
         <nav class="main-nav">
-            <a href="/">Новости сервера</a>
-            <a href="/forums">Список форумов</a>
-            <a href="/Wiki/Page?page=index">Wiki</a>
-            <a href="/contacts">Контакты</a>
+            <div class="newsButton">
+                <a href="/">Новости сервера</a>
+            </div>
+            <div class="forumsButton">
+                <a href="/forums">Список форумов</a>
+            </div>
+            <div class="wikiButton">
+                <a href="/Wiki/Page?page=index">Wiki</a>
+            </div>
+            <div class="contactsButton">
+                <a href="/contacts">Контакты</a>
+            </div>
+            <input type="text" name="userGET" placeholder="Поиск" size="18" />
         </nav>
     </header>
 
     <div class="page-wrapper">
         <aside class="wiki-sidebar">
-            <h1>TEST</h1>
-            <h2>YA</h2>
+            <a href="/" class="logo"></a>
+            <h2>Навигация</h2>
+            <a href="/Wiki/Page?page=spacelaw" class="spl-pagebutton">Космический закон</a>
         </aside>
 
         <main class="wiki-content">

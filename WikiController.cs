@@ -25,7 +25,9 @@ public class WikiController : Controller
 
         var pipeline = new MarkdownPipelineBuilder()
             .UseAdvancedExtensions()
+            .UseEmojiAndSmiley()
             .Build();
+            
 
         var html = Markdown.ToHtml(markdown, pipeline);
 

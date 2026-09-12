@@ -32,7 +32,8 @@ body {
 .newsButton a,
 .forumsButton a,
 .wikiButton a,
-.contactsButton a {
+.contactsButton a,
+.discordButton a {
     background-color: #3748935e;
     color: #ffffff;
     padding: 8px 16px;
@@ -98,7 +99,7 @@ body {
     overflow-y: auto;
 }
 
-.wiki-sidebar .SRP-pagebuttonGEN a {
+.wiki-sidebar{
     background-color: #3748935e;
     color: #ffffff;
     padding: 8px 16px;
@@ -107,6 +108,27 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: bold;
     display: inline-block;
+}
+
+.SL-pagebutton a,
+.SRP-pagebuttonCOM a,
+.SRP-pagebuttonSEC a,
+.SRP-pagebuttonSCI a,
+.SRP-pagebuttonSER a,
+.SRP-pagebuttonLAW a,
+.SRP-pagebuttonCARGO a,
+.SRP-pagebuttonENG a,
+.SRP-pagebuttonGEN a,
+.SRP-pagebuttonMED a {
+    background-color: #3748935e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 14px;
 }
 
 /* CONTENT */
@@ -120,9 +142,39 @@ body {
     color: #fff;
 
     background-color: rgba(51, 51, 51, 0.35);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(16px);
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
 }
 
+.index-notsoblur {
+    margin-left: calc(var(--sidebar-width) + var(--content-gap)); 
+    margin-right: var(--content-right-gap);                          
+    margin-top: calc(var(--header-height) + var(--content-gap));
+    padding: var(--content-gap) 32px;
+    min-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+    background-color: rgba(51, 51, 51, 0.199);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.wiki-content > div,
+.wiki-content > section,
+.index-notsoblur > div,
+.index-notsoblur > section {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}

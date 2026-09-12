@@ -1,1 +1,3 @@
-@Html.Raw(ViewBag.Content)
+<div class="@(ViewBag.Title == "index" ? "index-notsoblur" : "wiki-content")">
+    @Html.Raw(ViewBag.Content)
+</div>

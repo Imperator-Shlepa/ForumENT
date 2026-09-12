@@ -14,13 +14,16 @@
                 <a href="/">Новости сервера</a>
             </div>
             <div class="forumsButton">
-                <a href="/forums">Список форумов</a>
+                <a href="/forums">Форум !НЕ РАБОТАЕТ!</a>
             </div>
             <div class="wikiButton">
-                <a href="/Wiki/Page?page=index">Wiki</a>
+                <a href="/Wiki/Page?page=index">Вики сервера</a>
             </div>
             <div class="contactsButton">
                 <a href="/contacts">Контакты</a>
+            </div>
+            <div class="discordButton">
+                <a href="https://discord.gg/nSazFtphhJ">Наш дискорд</a>
             </div>
             <input type="text" name="userGET" placeholder="Поиск" size="18" />
         </nav>
@@ -30,18 +33,50 @@
         <aside class="wiki-sidebar">
             <a href="/" class="logo"></a>
             <h2>Навигация</h2>
-            <a href="/Wiki/Page?page=spacelaw" class="SL-pagebutton">Космический закон</a>
-            <a href="/Wiki/Page?page=generalsrp" class="SRP-pagebuttonGEN">Общее СРП</a>
-            <a href="/Wiki/Page?page=commandsrp" class="SRP-pagebuttonCOM">СРП командования</a>
-            <a href="/Wiki/Page?page=secsrp" class="SRP-pagebuttonSEC">СРП безопасности</a>
-            <a href="/Wiki/Page?page=scisrp" class="SRP-pagebuttonSCI">СРП науки</a>
-            <a href="/Wiki/Page?page=servsrp" class="SRP-pagebuttonSER">СРП сервиса</a>
-            <a href="/Wiki/Page?page=lawsrp" class="SRP-pagebuttonLAW">СРП юриспруденции</a>
-            <a href="/Wiki/Page?page=cargosrp" class="SRP-pagebuttonCARGO">СРП грузов</a>
-            <a href="/Wiki/Page?page=engsrp" class="SRP-pagebuttonENG">СРП инженерии</a>
+            <div class="SL-pagebutton">
+                <a href="/Wiki/Page?page=spacelaw">Космический закон</a>
+            </div>
+
+            <div class="SRP-pagebuttonCOM">
+                <a href="/Wiki/Page?page=commandsrp">СРП командования</a>
+            </div>
+
+            <div class="SRP-pagebuttonSEC">
+                <a href="/Wiki/Page?page=secsrp">СРП безопасности</a>
+            </div>
+
+            <div class="SRP-pagebuttonSCI">
+                <a href="/Wiki/Page?page=scisrp">СРП науки</a>
+            </div>
+
+            <div class="SRP-pagebuttonSER">
+                <a href="/Wiki/Page?page=servsrp">СРП сервиса</a>
+            </div>
+
+            <div class="SRP-pagebuttonLAW">
+                <a href="/Wiki/Page?page=lawsrp">СРП юриспруденции</a>
+            </div>
+
+            <div class="SRP-pagebuttonCARGO">
+                <a href="/Wiki/Page?page=cargosrp">СРП грузов</a>
+            </div>
+
+            <div class="SRP-pagebuttonENG">
+                <a href="/Wiki/Page?page=engsrp">СРП инженерии</a>
+            </div>
+
+            <div class="SRP-pagebuttonGEN">
+                <a href="/Wiki/Page?page=generalsrp">Общее СРП</a>
+            </div>
+
+            <div class="SRP-pagebuttonMED">
+                <a href="/Wiki/Page?page=medsrp">СРП медицины</a>
+            </div>
+
+              
         </aside>
 
-        <main class="wiki-content">
+        <main>
             @RenderBody()
         </main>
     </div>

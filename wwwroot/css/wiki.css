@@ -22,7 +22,7 @@ body {
     display: block;
     width: 160px;
     height: 80px;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 40px;
     background-image: url('/images/icons/ENTLogo.png');
     background-size: contain;
     background-position: left center;
@@ -103,7 +103,6 @@ body {
     background-color: #3748935e;
     color: #ffffff;
     padding: 8px 16px;
-    border-radius: 4px;
     text-decoration: none;
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: bold;
@@ -129,6 +128,7 @@ body {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 14px;
+    width: 136px;
 }
 
 /* CONTENT */
@@ -177,4 +177,80 @@ body {
     border-radius: 0 !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
+}
+
+/* TABELLES TEST */
+
+.wiki-content table,
+.index-notsoblur table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wiki-content th,
+.index-notsoblur th {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.wiki-content td,
+.index-notsoblur td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.wiki-content tbody tr:nth-child(even),
+.index-notsoblur tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+
+.wiki-content tbody tr:last-child td,
+.index-notsoblur tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.wiki-content table a,
+.index-notsoblur table a {
+    color: #8fb2ff;
+    text-decoration: none;
+}
+
+.wiki-content table a:hover,
+.index-notsoblur table a:hover {
+    text-decoration: underline;
+}
+
+
+.wiki-content tbody tr:hover,
+.index-notsoblur tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.wiki-diagram-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    overflow-x: auto;   /* если диаграмма шире карточки — скролл, а не обрезание */
+}
+
+.wiki-diagram {
+    max-width: 100%;
+    height: auto;
 }

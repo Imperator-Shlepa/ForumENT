@@ -1,7 +1,7 @@
 
 <div class="index-notsoblur">
     <h1>Добро пожаловать на вики сервера ENTERPRISE</h1>
-    <p>IP сервера: `station-enterprise.space`</p>
+    <p>IP сервера: station-enterprise.space</p>
     <hr>
     <h2>Новости сервера</h2>
     <p>Открытие сайта! Приветствуем всех на нашем сайте!</p>

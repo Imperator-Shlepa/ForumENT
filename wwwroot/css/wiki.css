@@ -22,10 +22,10 @@ body {
     display: block;
     width: 160px;
     height: 80px;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 27px;
     background-image: url('/images/icons/ENTLogo.png');
     background-size: contain;
-    background-position: left center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 

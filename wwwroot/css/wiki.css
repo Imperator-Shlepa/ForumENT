@@ -1,5 +1,5 @@
 :root {
-    --sidebar-width: 200px;
+    --sidebar-width: 250px;
     --header-height: 96px;
     --content-gap: 34px;
     --content-right-gap: 60px; 
@@ -109,16 +109,7 @@ body {
     display: inline-block;
 }
 
-.SL-pagebutton a,
-.SRP-pagebuttonCOM a,
-.SRP-pagebuttonSEC a,
-.SRP-pagebuttonSCI a,
-.SRP-pagebuttonSER a,
-.SRP-pagebuttonLAW a,
-.SRP-pagebuttonCARGO a,
-.SRP-pagebuttonENG a,
-.SRP-pagebuttonGEN a,
-.SRP-pagebuttonMED a {
+.sidebar-button a {
     background-color: #3748935e;
     color: #ffffff;
     padding: 8px 16px;
@@ -128,7 +119,7 @@ body {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 14px;
-    width: 136px;
+    width: 85%;
 }
 
 /* CONTENT */
@@ -254,3 +245,130 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+.srp-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.srp-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(55, 72, 147, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 12px 3px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.2s, border-color 0.2s;
+    cursor: pointer;
+    flex: 1 1 auto;
+    min-width: 180px;
+    justify-content: center;
+
+}
+
+.srp-card:hover {
+    background-color: rgba(55, 72, 147, 0.65);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.srp-card-icon {
+    image-rendering: pixelated;
+}
+
+details {
+    border-radius: 4px;
+    margin: 8px 0;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+details summary {
+    padding: 12px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    user-select: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: '▶ ';
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+details[open] summary::before {
+    content: '▼ ';
+}
+
+details .content-inner,
+details > *:not(summary) {
+    padding: 12px 16px;
+    background: rgba(0,0,0,0.25);
+}
+
+details { border-radius: 4px; margin: 8px 0; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+details summary {
+    padding: 14px 20px;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    user-select: none;
+}
+details > p {
+    padding: 12px 24px;
+    margin: 0;
+}
+.details-body {
+    padding: 16px 24px;
+}
+
+.details-body p {
+    margin: 0 0 12px 0;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before { content: '▶ '; font-size: 11px; opacity: 0.7; }
+details[open] summary::before { content: '▼ '; }
+details > *:not(summary) { padding: 12px 24px; background: rgba(0,0,0,0.25); }
+
+details[data-color="green"]  { background: rgba(34,100,34,0.35);   border-color: rgba(34,200,34,0.4); }
+details[data-color="green"]  summary { background: rgba(34,120,34,0.5);  color: #90ee90; }
+
+details[data-color="blue"]   { background: rgba(20,60,140,0.35);   border-color: rgba(60,120,255,0.4); }
+details[data-color="blue"]   summary { background: rgba(20,60,160,0.5);  color: #7fb3ff; }
+
+details[data-color="red"]    { background: rgba(120,20,20,0.35);   border-color: rgba(255,60,60,0.4); }
+details[data-color="red"]    summary { background: rgba(140,20,20,0.5);  color: #ff9090; }
+
+details[data-color="pink"]   { background: rgba(140,60,100,0.35);  border-color: rgba(255,150,200,0.4); }
+details[data-color="pink"]   summary { background: rgba(150,60,110,0.5); color: #ffb6d9; }
+
+details[data-color="brown"]  { background: rgba(100,50,20,0.35);   border-color: rgba(200,120,60,0.4); }
+details[data-color="brown"]  summary { background: rgba(110,55,20,0.5);  color: #d4956a; }
+
+details[data-color="amber"]  { background: rgba(120,90,0,0.35);    border-color: rgba(220,160,0,0.4); }
+details[data-color="amber"]  summary { background: rgba(130,95,0,0.5);   color: #f0c040; }
+
+details[data-color="yellow"] { background: rgba(100,100,0,0.35);   border-color: rgba(255,255,0,0.3); }
+details[data-color="yellow"] summary { background: rgba(110,110,0,0.5);  color: #ffff80; }
+
+details[data-color="purple"] { background: rgba(80,20,120,0.35);   border-color: rgba(180,80,255,0.4); }
+details[data-color="purple"] summary { background: rgba(90,20,130,0.5);  color: #d494ff; }
+
+details[data-color="black"]  { background: rgba(20,20,20,0.5);     border-color: rgba(255,255,255,0.15); }
+details[data-color="black"]  summary { background: rgba(30,30,30,0.6);   color: #cccccc; }
